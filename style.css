@@ -1,18 +1,19 @@
 * {
     box-sizing: border-box;
-    margin: 0;
 }
 
-.html,
+html,
 body {
     height: 100%;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
 }
 
 .wrapper {
     height: 100vh;
-    background: url(img/23.jpg) no-repeat center / cover;
+    background: url(img/23febrary-full-860x484.jpg) no-repeat center / cover;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -20,83 +21,46 @@ body {
     align-items: center;
 }
 
-.compliment {
-    background-color: rgb(255, 255, 255);
-    width: 30%;
-    height: 55%;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: solid black 1px;
-    border-radius: 10px;
 
-}
-
-.compliment__text {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 30px;
-
-}
-
-.compliment__title {
-    margin-top: 0px;
-    margin-bottom: 50px;
-
-}
-
-.compliment__title-name {}
-
-.myForm {}
-
-input[type='text'] {
-    outline: none;
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    color: rgb(255, 255, 142);
-    font-weight: bold;
-}
-
-#userName {}
-
-input[type='text'] {
-    font-weight: 400px;
-}
-
-.podarok {
+.wrap_text {
+    height: 400px;
     width: 500px;
-    height: 300px;
-    padding: 1px;
-    background-color: white;
-    color: black;
-    margin: 40px;
+    background-color: rgb(102, 122, 252);
+    border: 2px black solid ;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
     display: none;
 }
 
-.btn {
-    width: 200px;
-    height: 50px;
-    padding: 1px;
-    background-color: #f77e0d;
-    color: black;
-    border-radius: 50px;
-    color: aliceblue;
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 30px;
-    border: 1px;
-    margin: 10px;
+
+.button-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
 }
 
-.form__row {
-    margin-bottom: 20px;
+#button1 {
+    background-color: rgb(241, 88, 88);
+    border: solid 1px black;
+    border-radius: 2px;
+    width: 200px;
+    height: 40px;
+    color: #fff;
+}
+
+#button {
+    background-color: rgb(241, 88, 88);
+    border: solid 1px black;
+    border-radius: 2px;
+    width: 200px;
+    height: 40px;
+    color: #fff;
+}
+
+.comp_img {
+border: black 1px solid;
+display: none;
 }

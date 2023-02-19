@@ -1,25 +1,19 @@
-let elements = myForm.elements;
-let button = document.querySelector('#button');
-let button1 = document.querySelector('#button1');
-let titleName = document.querySelector('#titleName');
-let compliment = document.querySelector('.compliment');
-let complimentText = document.querySelector('.compliment__text');
-let gift = document.querySelector('.podarok');
+let comp_img = document.querySelector(".comp_img")
+let wrap_text =document.querySelector('.wrap_text')
+let btn1 = document.querySelector('#button1');
+let btn = document.querySelector('#button');
 
-button.addEventListener('click', function (event) {
+
+btn1.addEventListener('click', function (event) {
     event.preventDefault();
-    titleName.textContent = elements.userName.value
-    compliment.style.display = "block"
-    gift.style.display = "none"
-
+    wrap_text.style.display = 'block'
+    comp_img.style.display = 'none'
+    
 })
 
-button1.addEventListener('click', function (event) {
+btn.addEventListener('click', function (event) {
     event.preventDefault();
-    compliment.style.display = "none"
-    gift.style.display = "block"
-    gift.addEventListener('click', function (event) {
-        event.preventDefault();
-        gift.style.color = "red"
-    })
+    comp_img.style.display = 'block'
+    wrap_text.style.display = 'none'
+    
 })
